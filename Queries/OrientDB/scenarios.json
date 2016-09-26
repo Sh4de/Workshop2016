@@ -1,0 +1,5 @@
+{
+	"scenario 1": "select * from Profile where _key={id}",
+	"scenario 4": "select AGE,count(*) from Profile group by AGE",
+	"scenario 5": "select shortestPath($a[0].rid, $b[0].rid, \"Out\") LET $a = (select @rid from Profile where _key = {id}), $b = (select @rid from Profile where _key = {id2})"
+}

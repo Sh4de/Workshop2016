@@ -1,0 +1,6 @@
+{
+	"scenario 1": "MATCH (f:PROFILES {_key:{id}}",
+	"scenario 2": "CREATE (f:PROFILES_TMP {doc})",
+	"scenario 4": "MATCH (f:PROFILES) RETURN f.AGE, count(*)",
+	"scenario 5": "MATCH (s:PROFILES {_key:{from}}),(t:PROFILES {_key:{to}}), p = shortestPath((s)-[*..15]->(t)) RETURN [x in nodes(p) | x._key] as path - {from: {id}, to: {id2}}"
+}

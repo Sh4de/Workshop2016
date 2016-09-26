@@ -1,0 +1,6 @@
+{
+	"scenario 1": "g.V().has(\"_key\",{id}).valueMap()",
+	"scenario 2": "graph.addVertex({collection});",
+	"scenario 4": "g.V().has(\"AGE\").groupCount().by(\"AGE\")",
+	"scenario 5": "g.V({node_id}).repeat(out().simplePath()).times(15).emit(hasId({node_id2})).hasId({node_id2}).path().limit(1)"
+}
